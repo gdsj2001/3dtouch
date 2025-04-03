@@ -1,14 +1,117 @@
-
 <!DOCTYPE html>
 <html lang="zh">
 <head>
   <meta charset="UTF-8">
-  <title>我的文件空间</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>产品目录</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+    .hero {
+      background: url('背景1.jpg') no-repeat center center;
+      background-size: cover;
+      height: 240px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 20px;
+      color: white;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    }
+    .hero h1 {
+      font-size: 28px;
+      margin: 0 0 8px;
+    }
+    .hero p {
+      font-size: 14px;
+      margin: 0;
+    }
+    .section {
+      padding: 20px;
+    }
+    .section h2 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+    .section p {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .item {
+      width: 30%;
+      text-align: center;
+      flex-grow: 1;
+      flex-basis: calc(33.333% - 12px);
+    }
+    .item img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .item span {
+      display: block;
+      margin-top: 8px;
+      font-size: 14px;
+      color: #333;
+    }
+    @media (max-width: 768px) {
+      .item {
+        flex-basis: calc(50% - 12px);
+      }
+    }
+  </style>
 </head>
 <body>
-  <h2>📁 文件下载列表</h2>
-  <ul>
-    <li><a href="https://github.com/gdsj2001/3dtouch/raw/main/%E8%83%8C%E6%99%AF1.jpg" target="_blank">📄 背景1.jpg</a></li>
-  </ul>
+  <div class="hero">
+    <h1>产品目录</h1>
+    <p>探索各类精选，找到属于你的心动之选</p>
+  </div>
+
+  <div class="section">
+    <h2>全部品类</h2>
+    <p>精选好物，随心挑选</p>
+    <div class="grid">
+      <div class="item">
+        <a href="#"><img src="https://img.example.com/lamps.jpg" alt="灯具"><span>灯具</span></a>
+      </div>
+      <div class="item">
+        <a href="#"><img src="https://img.example.com/sofa.jpg" alt="沙发"><span>沙发</span></a>
+      </div>
+      <div class="item">
+        <a href="#"><img src="https://img.example.com/cabinet.jpg" alt="柜子"><span>柜子</span></a>
+      </div>
+      <div class="item">
+        <a href="#"><img src="https://img.example.com/table.jpg" alt="桌椅"><span>桌椅</span></a>
+      </div>
+      <div class="item">
+        <a href="#"><img src="https://img.example.com/bed.jpg" alt="床"><span>床</span></a>
+      </div>
+      <div class="item">
+        <a href="#"><img src="https://img.example.com/deco.jpg" alt="摆件"><span>摆件</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>人气热卖</h2>
+    <p>爆款优选，质量有保障</p>
+    <div class="grid">
+      <div class="item">
+        <a href="#"><img src="https://img.example.com/hot1.jpg" alt="热卖1"><span>人体工学椅</span></a>
+      </div>
+      <div class="item">
+        <a href="#"><img src="https://img.example.com/hot2.jpg" alt="热卖2"><span>实木餐边柜</span></a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
